@@ -524,14 +524,14 @@ a {
 }
 
 .contact-main h2 {
-  font-size: clamp(3rem, 7vw, 7rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 300;
   line-height: .9;
   margin-bottom: 45px;
 }
 
 .contact-whatsapp {
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
   border-bottom: 1px solid #111;
 }
 
