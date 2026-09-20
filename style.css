@@ -485,17 +485,15 @@ a {
 }
 
 .contact-main h2 {
-  font-size: clamp(4rem, 10vw, 11rem);
+  font-size: clamp(3rem, 7vw, 7rem);
   font-weight: 300;
-  line-height: 0.85;
-
-  margin-bottom: 60px;
+  line-height: .9;
+  margin-bottom: 45px;
 }
 
 .contact-whatsapp {
-  font-size: clamp(1.5rem, 3vw, 3rem);
-
-  border-bottom: 1px solid #111111;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  border-bottom: 1px solid #111;
 }
 
 .contact-links {
