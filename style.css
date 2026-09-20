@@ -760,11 +760,84 @@ a {
   }
 
 
-  .agenda-item {
-    grid-template-columns: 1fr;
+  /* AGENDA MOBILE */
 
-    gap: 35px;
-  }
+.agenda {
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
+}
+
+.agenda-header {
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.agenda-period {
+  font-size: 28px;
+}
+
+.agenda-row {
+  grid-template-columns: 65px 1fr auto;
+  grid-template-areas:
+    "image date date"
+    "image title title"
+    ". description description"
+    ". action action";
+
+  gap: 14px 18px;
+  width: 100%;
+  padding: 20px 0 25px;
+}
+
+.agenda-image {
+  grid-area: image;
+  width: 65px;
+  height: 65px;
+}
+
+.agenda-date {
+  grid-area: date;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.agenda-date span {
+  font-size: 16px;
+}
+
+.agenda-title {
+  grid-area: title;
+}
+
+.agenda-title h2 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.agenda-title p {
+  font-size: 14px;
+}
+
+.agenda-description {
+  grid-area: description;
+  max-width: 260px;
+}
+
+.agenda-description p {
+  font-size: 14px;
+}
+
+.agenda-action {
+  grid-area: action;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 14px;
+}
 
 
   .space-images {
