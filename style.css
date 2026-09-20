@@ -545,6 +545,37 @@ a {
 
   font-size: 15px;
 }
+
+.arrow {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-left: 7px;
+  position: relative;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 8px;
+  left: 1px;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  top: 1px;
+  right: 0;
+}
+
 /* =========================
    LEGAL
 ========================= */
