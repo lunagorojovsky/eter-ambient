@@ -343,6 +343,40 @@ a {
   line-height: 1.45;
 }
 
+.manifesto-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 850px;
+
+  padding: 80px 70px;
+  margin-bottom: 140px;
+}
+
+.manifesto-paper {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: calc(100% + 120px);
+
+  background: #f2f0e9;
+
+  z-index: 0;
+
+  will-change: transform;
+}
+
+.manifesto {
+  position: relative;
+  z-index: 1;
+
+  max-width: 700px;
+  margin-bottom: 0;
+}
+
 .manifesto {
   max-width: 700px;
 }
