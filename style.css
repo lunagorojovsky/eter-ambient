@@ -89,8 +89,21 @@ a {
 
 .hero-logo {
   width: min(48vw, 520px);
-  height: auto;
-  display: block;
+  aspect-ratio: 1 / 1;
+
+  background-color: #c29548;
+
+  -webkit-mask-image: url("https://res.cloudinary.com/dsppfoxzs/image/upload/v1789863156/ChatGPT_Image_Sep_19_2026_09_08_56_PM_jxjwks.png");
+  mask-image: url("https://res.cloudinary.com/dsppfoxzs/image/upload/v1789863156/ChatGPT_Image_Sep_19_2026_09_08_56_PM_jxjwks.png");
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 .hero-name {
