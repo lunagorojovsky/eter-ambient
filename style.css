@@ -449,6 +449,27 @@ a {
 
   font-size: 15px;
 }
+/* =========================
+   LEGAL
+========================= */
+
+.legal-footer {
+  margin-top: 45px;
+  padding-top: 18px;
+
+  border-top: 1px solid #e2e2de;
+
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.legal-footer sup {
+  position: relative;
+  top: -0.15em;
+
+  font-size: 7px;
+  margin-left: 1px;
+}
 
 
 /* =========================
