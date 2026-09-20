@@ -1,14 +1,11 @@
+/* =========================
+   BASE
+========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  min-height: 100%;
-  background: #ffffff;
 }
 
 html {
@@ -16,13 +13,67 @@ html {
 }
 
 body {
+  width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
+
+  background: #ffffff;
   color: #111111;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
-/* PORTADA */
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 24px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 100;
+
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.nav-brand {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+  opacity: 0.45;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
 
 .hero {
   width: 100%;
@@ -30,10 +81,10 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
-  padding: 40px 24px;
+  padding: 70px 24px 40px;
 }
 
 .hero-logo {
@@ -50,13 +101,11 @@ body {
   margin-top: 35px;
 }
 
-
-/* ENTRADA PORTADA */
-
 .hero-logo,
 .hero-name {
   opacity: 0;
   transform: translateY(8px);
+
   animation: aparecer 1.5s ease forwards;
 }
 
@@ -72,39 +121,353 @@ body {
 }
 
 
-/* SECCIONES */
+/* =========================
+   VIDEO
+========================= */
+
+.video-section {
+  width: 100%;
+  padding: 0 4vw;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eeeeeb;
+
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12vw 8vw;
+
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 900px;
+}
+
+.intro-phrase {
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 300;
+  line-height: 0.95;
+
+  margin-bottom: 60px;
+}
+
+.intro-text {
+  max-width: 620px;
+  margin: 0 auto 50px;
+
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  line-height: 1.4;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.button-link {
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid #111111;
+
+  font-size: 15px;
+  letter-spacing: 0.04em;
+
+  transition: opacity 0.3s ease;
+}
+
+.button-link:hover {
+  opacity: 0.45;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
 
 .section {
   width: 100%;
   min-height: 100vh;
-  padding: 10vw;
+
+  padding: 120px 7vw;
+}
+
+.section-label {
+  margin-bottom: 100px;
+
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================
+   EXPERIENCIAS
+========================= */
+
+.experiences {
+  width: 100%;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  gap: 30px;
+
+  align-items: baseline;
+
+  padding: 45px 0;
+
+  border-top: 1px solid #bdbdb8;
+}
+
+.experience:last-child {
+  border-bottom: 1px solid #bdbdb8;
+}
+
+.experience span {
+  font-size: 13px;
+}
+
+.experience h2 {
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-weight: 300;
+}
+
+.experience p {
+  max-width: 350px;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* =========================
+   SOBRE ÉTER
+========================= */
+
+.about-intro {
+  max-width: 900px;
+
+  margin-bottom: 140px;
+}
+
+.about-intro h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 300;
+  line-height: 0.95;
+
+  margin-bottom: 50px;
+}
+
+.about-intro p {
+  max-width: 550px;
+
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 6vw;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  background: #eeeeeb;
+
+  margin-bottom: 25px;
+}
+
+.person h3 {
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 10px;
+}
+
+.person p {
+  max-width: 400px;
+
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+
+/* =========================
+   AGENDA
+========================= */
+
+.agenda-item {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr auto;
+
+  gap: 50px;
+
+  align-items: end;
+
+  padding: 50px 0;
+
+  border-top: 1px solid #bdbdb8;
+  border-bottom: 1px solid #bdbdb8;
+}
+
+.agenda-type {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.agenda-item h2 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 300;
+}
+
+.agenda-info {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   ESPACIO
+========================= */
+
+.space-intro {
+  max-width: 1000px;
+
+  margin-bottom: 100px;
+}
+
+.space-intro h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 300;
+  line-height: 0.95;
+
+  margin-bottom: 50px;
+}
+
+.space-intro p {
+  max-width: 520px;
+
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.space-images {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+
+  gap: 30px;
+
+  align-items: end;
+}
+
+.space-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  background: #eeeeeb;
+}
+
+.space-image:last-child {
+  aspect-ratio: 4 / 3;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact {
+  min-height: 100vh;
+
+  padding: 120px 7vw 50px;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.content {
-  max-width: 800px;
+.contact-main {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.section h2 {
-  font-size: clamp(2.5rem, 6vw, 6rem);
-  font-weight: 400;
-  margin-bottom: 30px;
+.contact-main h2 {
+  font-size: clamp(4rem, 10vw, 11rem);
+  font-weight: 300;
+  line-height: 0.85;
+
+  margin-bottom: 60px;
 }
 
-.section p {
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
-  line-height: 1.6;
+.contact-whatsapp {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+
+  border-bottom: 1px solid #111111;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 30px;
+
+  border-top: 1px solid #bdbdb8;
+
+  font-size: 15px;
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 700px) {
 
+  .nav {
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+
   .hero {
-    padding: 30px 20px;
+    padding: 60px 20px 30px;
   }
 
   .hero-logo {
@@ -116,8 +479,77 @@ body {
     margin-top: 25px;
   }
 
+
+  .video-section {
+    padding: 0 20px;
+  }
+
+  .video-placeholder {
+    height: 65vh;
+  }
+
+
+  .intro {
+    min-height: 80vh;
+    padding: 100px 25px;
+  }
+
+  .intro-phrase {
+    margin-bottom: 40px;
+  }
+
+
   .section {
-    padding: 12vw 8vw;
+    min-height: auto;
+    padding: 100px 25px;
+  }
+
+  .section-label {
+    margin-bottom: 60px;
+  }
+
+
+  .experience {
+    grid-template-columns: 35px 1fr;
+    gap: 15px;
+
+    padding: 30px 0;
+  }
+
+  .experience p {
+    grid-column: 2;
+  }
+
+
+  .people {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+
+  .agenda-item {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .space-images {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  .contact {
+    padding: 100px 25px 35px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+
+    gap: 12px;
   }
 
 }
