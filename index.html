@@ -7,21 +7,45 @@
 
   <title>Éter Ambient</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+  <!-- NAVEGACIÓN -->
+
+  <header class="nav">
+
+    <a class="nav-brand" href="#inicio">
+      ÉTER AMBIENT
+    </a>
+
+    <nav class="nav-links">
+      <a href="#experiencias">Experiencias</a>
+      <a href="#sobre">Sobre Éter</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#espacio">Espacio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </header>
+
 
   <main>
 
-    <!-- PORTADA -->
+    <!-- INICIO -->
 
-    <section class="hero">
+    <section class="hero" id="inicio">
 
       <img
         class="hero-logo"
         src="https://res.cloudinary.com/dsppfoxzs/image/upload/v1789863156/ChatGPT_Image_Sep_19_2026_09_08_56_PM_jxjwks.png"
-        alt="Éter Ambient"
+        alt=""
       >
 
       <img
@@ -33,56 +57,222 @@
     </section>
 
 
-    <!-- ÉTER -->
+    <!-- VIDEO -->
 
-    <section class="section" id="eter">
-      <div class="content">
-        <h2>Éter</h2>
+    <section class="video-section">
 
-        <p>
-          Un espacio dedicado al sonido, la vibración y la escucha.
-        </p>
+      <div class="video-placeholder">
+        <span>VIDEO</span>
       </div>
+
     </section>
 
 
-    <!-- SONOTERAPIA -->
+    <!-- INTRO -->
 
-    <section class="section" id="sonoterapia">
-      <div class="content">
-        <h2>Sonoterapia</h2>
+    <section class="intro">
 
-        <p>
-          Experiencias sonoras individuales y grupales.
+      <div class="intro-content">
+
+        <p class="intro-phrase">
+          El sonido como espacio.
         </p>
+
+        <p class="intro-text">
+          Éter Ambient es un espacio dedicado a la escucha,
+          la vibración y las experiencias sonoras.
+        </p>
+
+        <a class="button-link" href="#contacto">
+          Reservar / Consultar
+        </a>
+
       </div>
+
     </section>
 
 
-    <!-- EL ESPACIO -->
+    <!-- EXPERIENCIAS -->
+
+    <section class="section" id="experiencias">
+
+      <p class="section-label">Experiencias</p>
+
+      <div class="experiences">
+
+        <article class="experience">
+          <span>01</span>
+          <h2>Baños de sonido</h2>
+          <p>
+            Experiencias inmersivas de escucha y vibración.
+          </p>
+        </article>
+
+        <article class="experience">
+          <span>02</span>
+          <h2>Conciertos de gong</h2>
+          <p>
+            Encuentros atravesados por la resonancia del gong.
+          </p>
+        </article>
+
+        <article class="experience">
+          <span>03</span>
+          <h2>Experiencias especiales</h2>
+          <p>
+            Encuentros y formatos creados especialmente.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE ÉTER -->
+
+    <section class="section" id="sobre">
+
+      <p class="section-label">Sobre Éter Ambient</p>
+
+      <div class="about-intro">
+        <h2>
+          Un espacio para escuchar de otra manera.
+        </h2>
+
+        <p>
+          Acá irá la filosofía de Éter Ambient y la forma
+          en que Viki y Carla entienden el sonido, el cuerpo
+          y la escucha.
+        </p>
+      </div>
+
+
+      <div class="people">
+
+        <article class="person">
+
+          <div class="image-placeholder"></div>
+
+          <h3>Viki</h3>
+
+          <p>
+            Formación, recorrido y relación con la práctica sonora.
+          </p>
+
+        </article>
+
+
+        <article class="person">
+
+          <div class="image-placeholder"></div>
+
+          <h3>Carla</h3>
+
+          <p>
+            Formación, recorrido y relación con la práctica sonora.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- AGENDA -->
+
+    <section class="section" id="agenda">
+
+      <p class="section-label">Agenda</p>
+
+      <div class="agenda-item">
+
+        <div>
+          <p class="agenda-type">Baño de sonido</p>
+          <h2>Próxima experiencia</h2>
+        </div>
+
+        <div class="agenda-info">
+          <p>Fecha — Horario</p>
+          <p>Duración</p>
+          <p>Éter Ambient</p>
+        </div>
+
+        <a class="button-link" href="#contacto">
+          Reservar
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ESPACIO -->
 
     <section class="section" id="espacio">
-      <div class="content">
-        <h2>El espacio</h2>
+
+      <p class="section-label">Espacio</p>
+
+      <div class="space-intro">
+
+        <h2>
+          Entrar. Descalzarse.<br>
+          Prepararse para escuchar.
+        </h2>
 
         <p>
-          Éter Ambient.
+          Acá irá un texto breve sobre la experiencia
+          de llegar a Éter Ambient y habitar el espacio.
         </p>
+
       </div>
+
+
+      <div class="space-images">
+
+        <div class="space-image"></div>
+        <div class="space-image"></div>
+
+      </div>
+
     </section>
 
 
     <!-- CONTACTO -->
 
-    <section class="section" id="contacto">
-      <div class="content">
-        <h2>Contacto</h2>
+    <footer class="contact" id="contacto">
+
+      <p class="section-label">Contacto</p>
+
+      <div class="contact-main">
+
+        <h2>
+          Vení a escuchar.
+        </h2>
+
+        <a class="contact-whatsapp" href="#">
+          WhatsApp
+        </a>
+
+      </div>
+
+
+      <div class="contact-links">
+
+        <a href="#">Instagram</a>
+
+        <a href="mailto:">
+          Mail
+        </a>
 
         <p>
-          Próximamente.
+          Buenos Aires, Argentina
         </p>
+
       </div>
-    </section>
+
+    </footer>
 
   </main>
 
