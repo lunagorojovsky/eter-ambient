@@ -229,41 +229,51 @@ a {
 ========================= */
 
 .experiences {
-  width: 100%;
-}
-
-.experience {
   display: grid;
-  grid-template-columns: 80px 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 
-  align-items: baseline;
-
-  padding: 45px 0;
+  width: 100%;
 
   border-top: 1px solid #bdbdb8;
-}
-
-.experience:last-child {
   border-bottom: 1px solid #bdbdb8;
 }
 
-.experience span {
-  font-size: 13px;
+.experience {
+  min-height: 430px;
+
+  padding: 28px 28px 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid #bdbdb8;
+}
+
+.experience:last-child {
+  border-right: none;
+}
+
+.experience-number {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+
+  margin-bottom: auto;
 }
 
 .experience h2 {
-  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: 300;
+  line-height: 0.95;
+
+  margin-bottom: 25px;
 }
 
 .experience p {
-  max-width: 350px;
-
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.4;
-}
 
+  max-width: 280px;
+}
 
 /* =========================
    SOBRE ÉTER
