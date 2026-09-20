@@ -681,6 +681,10 @@ a {
   line-height: 1.35;
 }
 
+   .manifesto-paper {
+    background-position: left center;
+  }
+
   .people {
     grid-template-columns: 1fr;
 
