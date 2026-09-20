@@ -369,6 +369,7 @@ a {
   background-repeat: no-repeat;
 
    filter: grayscale(70%);
+   opacity: 0.65;
 
   z-index: 0;
 
