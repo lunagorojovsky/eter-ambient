@@ -13,67 +13,83 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      background: #ffffff;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: #111111;
+      overflow-x: hidden;
     }
 
     /* PORTADA */
 
     .hero {
       width: 100%;
-      height: 100vh;
+      height: 100svh;
+
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
+
+      padding: 40px 24px;
     }
 
-    .hero h1 {
-      font-size: clamp(3rem, 9vw, 8rem);
-      font-weight: 400;
-      letter-spacing: -0.04em;
+    .hero-logo {
+      width: min(58vw, 620px);
+      height: auto;
+      display: block;
     }
 
-    /* CONTENIDO */
+    .hero-name {
+      width: min(35vw, 370px);
+      height: auto;
+      display: block;
 
-    section {
-      min-height: 100vh;
-      padding: 10vw;
-      display: flex;
-      align-items: center;
+      margin-top: 35px;
     }
 
-    .content {
-      max-width: 800px;
+    /* ENTRADA SUAVE */
+
+    .hero-logo,
+    .hero-name {
+      opacity: 0;
+      transform: translateY(8px);
+      animation: aparecer 1.5s ease forwards;
     }
 
-    h2 {
-      font-size: clamp(2rem, 5vw, 5rem);
-      font-weight: 400;
-      margin-bottom: 30px;
+    .hero-name {
+      animation-delay: 0.25s;
     }
 
-    p {
-      font-size: clamp(1rem, 1.5vw, 1.3rem);
-      line-height: 1.6;
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    /* CONTACTO */
+    /* MOBILE */
 
-    .contacto {
-      min-height: 70vh;
+    @media (max-width: 700px) {
+
+      .hero {
+        padding: 30px 20px;
+      }
+
+      .hero-logo {
+        width: 88vw;
+      }
+
+      .hero-name {
+        width: 60vw;
+        margin-top: 25px;
+      }
+
     }
-
-    a {
-      color: inherit;
-    }
-
   </style>
 </head>
 
@@ -82,43 +98,19 @@
   <main>
 
     <section class="hero">
-      <h1>ÉTER AMBIENT</h1>
-    </section>
 
-    <section id="eter">
-      <div class="content">
-        <h2>Éter</h2>
-        <p>
-          Un espacio dedicado al sonido, la vibración y la escucha.
-        </p>
-      </div>
-    </section>
+      <img
+        class="hero-logo"
+        src="https://res.cloudinary.com/dsppfoxzs/image/upload/v1789863156/ChatGPT_Image_Sep_19_2026_09_08_56_PM_jxjwks.png"
+        alt="Éter Ambient"
+      >
 
-    <section id="sonoterapia">
-      <div class="content">
-        <h2>Sonoterapia</h2>
-        <p>
-          Experiencias sonoras individuales y grupales.
-        </p>
-      </div>
-    </section>
+      <img
+        class="hero-name"
+        src="https://res.cloudinary.com/dsppfoxzs/image/upload/v1789863161/ChatGPT_Image_Sep_19_2026_09_09_08_PM_g4iggm.png"
+        alt="Éter Ambient"
+      >
 
-    <section id="espacio">
-      <div class="content">
-        <h2>El espacio</h2>
-        <p>
-          Éter Ambient.
-        </p>
-      </div>
-    </section>
-
-    <section id="contacto" class="contacto">
-      <div class="content">
-        <h2>Contacto</h2>
-        <p>
-          Próximamente.
-        </p>
-      </div>
     </section>
 
   </main>
