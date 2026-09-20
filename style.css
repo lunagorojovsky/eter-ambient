@@ -682,8 +682,10 @@ a {
 }
 
    .manifesto-paper {
-    background-position: left center;
-  }
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
   .people {
     grid-template-columns: 1fr;
