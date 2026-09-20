@@ -11,7 +11,7 @@ function moveManifestoPaper() {
     (windowHeight - rect.top) /
     (windowHeight + rect.height);
 
-  const movement = progress * 100;
+  const movement = progress * -180;
 
   manifestoPaper.style.transform =
     `translateY(${movement}px)`;
