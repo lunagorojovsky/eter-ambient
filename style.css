@@ -973,4 +973,53 @@ a {
     gap: 12px;
   }
 
+   /* RESERVA MOBILE */
+
+.reservation {
+  min-height: 100svh;
+  padding: 120px 25px 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: stretch;
+}
+
+.reservation-label {
+  margin-bottom: 40px;
+}
+
+.reservation-info h1 {
+  font-size: clamp(3.2rem, 15vw, 5rem);
+  line-height: .85;
+  margin-bottom: 40px;
+}
+
+.reservation-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+}
+
+.reservation-details p:last-child {
+  grid-column: 1 / -1;
+}
+
+.reservation-description {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.reservation-checkout {
+  width: 100%;
+}
+
+.reservation-price strong {
+  font-size: 36px;
+}
+
+.reservation-button {
+  padding: 17px 15px;
+}
+
 }
