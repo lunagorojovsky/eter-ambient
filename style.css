@@ -14,16 +14,16 @@ html {
 
 html {
   scroll-behavior: smooth;
+  color-scheme: only light;
+  background-color: #ffffff !important;
 }
 
 body {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-
-  background: #ffffff;
-  color: #111111;
-
+  background-color: #ffffff !important;
+  color: #111111 !important;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 400;
 }
