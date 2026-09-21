@@ -107,7 +107,7 @@ a {
 }
 
 .hero-name {
-  width: min(35vw, 370px);
+  width: min(42vw, 440px);
   height: auto;
   display: block;
 
@@ -682,9 +682,9 @@ a {
   }
 
   .hero-name {
-    width: 60vw;
-    margin-top: 25px;
-  }
+  width: 68vw;
+  margin-top: 25px;
+}
 
 
   .video-section {
