@@ -631,6 +631,124 @@ a {
   margin-left: 1px;
 }
 
+/* RESERVA */
+
+.reservation-page {
+  min-height: 100vh;
+}
+
+.reservation {
+  min-height: 100vh;
+  padding: 150px 7vw 70px;
+
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 10vw;
+  align-items: center;
+}
+
+.reservation-info {
+  max-width: 750px;
+}
+
+.reservation-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 60px;
+}
+
+.reservation-info h1 {
+  font-size: clamp(4rem, 7vw, 8rem);
+  font-weight: 300;
+  line-height: .85;
+  margin-bottom: 55px;
+}
+
+.reservation-details {
+  display: flex;
+  gap: 35px;
+
+  padding-top: 18px;
+  border-top: 1px solid #bdbdb8;
+
+  font-size: 16px;
+}
+
+.reservation-description {
+  max-width: 480px;
+  margin-top: 55px;
+
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+
+/* CHECKOUT */
+
+.reservation-checkout {
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  padding: 30px 0;
+}
+
+.reservation-price {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  margin-bottom: 45px;
+}
+
+.reservation-price span {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.reservation-price strong {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.reservation-price small {
+  grid-column: 2;
+  text-align: right;
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+.reservation-availability {
+  padding: 18px 0;
+  border-top: 1px solid #deded9;
+  font-size: 14px;
+}
+
+.reservation-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 18px 20px;
+
+  background: #111;
+  color: #fff;
+  border: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 17px;
+  cursor: pointer;
+
+  transition: opacity .3s ease;
+}
+
+.reservation-button:hover {
+  opacity: .75;
+}
+
+.reservation-payment-note {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+  opacity: .6;
+}
 
 /* =========================
    MOBILE
